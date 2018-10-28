@@ -17,10 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const filmListView = new FilmList(filmContainer);
   filmListView.bindEvents();
 
-  // //Detailed View (more information)
-  const detCont = document.querySelector('#detail-view');
-  const filmDetail = new DetailView(detCont);
-  filmDetail.bindEvents();
+  // // //Detailed View (more information)
+  // const detCont = document.querySelector('#detail-view');
+  // const filmDetail = new DetailView(detCont);
+  // filmDetail.bindEvents();
 
   // Select view
   const dropDown = document.querySelector('select#film-dropdown');

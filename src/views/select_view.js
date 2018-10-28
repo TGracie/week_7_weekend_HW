@@ -11,18 +11,21 @@ SelectView.prototype.bindEvents = function () {
     });
     this.element.addEventListener('change', (evt) => {
       const selectedFilm = evt.target.value;
+      console.log('SelectView', selectedFilm);
 
       PubSub.publish('SelectView:change', selectedFilm);
     });
 };
 
 SelectView.prototype.populate = function (allFilms) {
-  const titles = allFilms.map(film => film.title);
+  // const titles = allFilms.map(film => film.title);
 
-  titles.forEach((title) => {
+  allFilms.forEach((film) => {
+    // console.log(film);
     const option = document.createElement('option');
-    option.textContent = title;
-    option.value = index;
+    option.textContent = film.title;
+    option.value = film.title;
+    // console.log(option);
     this.element.appendChild(option);
   });
 };
