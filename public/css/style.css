@@ -1,0 +1,23 @@
+body {
+  background-color: #01AAFE;
+  width: 95%;
+  margin: auto;
+}
+
+#film-list {
+  display: grid;
+  /* border: 1px solid yellow; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0.8em;
+}
+
+.film {
+  text-align: center;
+  border: 2px solid grey;
+  padding-left: 5px;
+  border-radius: 5px;
+}
+
+.info-list {
+  list-style-type: none;
+}
