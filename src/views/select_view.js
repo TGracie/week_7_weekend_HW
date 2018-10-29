@@ -20,11 +20,11 @@ SelectView.prototype.bindEvents = function () {
 SelectView.prototype.populate = function (allFilms) {
   // const titles = allFilms.map(film => film.title);
 
-  allFilms.forEach((film) => {
+  allFilms.forEach((film, index) => {
     // console.log(film);
     const option = document.createElement('option');
     option.textContent = film.title;
-    option.value = film.title;
+    option.value = film.index;
     // console.log(option);
     this.element.appendChild(option);
   });
